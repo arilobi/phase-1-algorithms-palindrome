@@ -1,13 +1,17 @@
-function isPalindrome(word) {
-  // Write your algorithm here
+function isPalindrome(input) {
+  return input === input.split('').reverse().join('');
 }
 
-/* 
-  Add your pseudocode here
-*/
+console.log(isPalindrome('abba'));
+console.log(isPalindrome('racecar'));
+console.log(isPalindrome('a'));
+console.log(isPalindrome('robot'));
+console.log(isPalindrome('ab'));
 
 /*
-  Add written explanation of your solution here
+The input.split('') splits the string into an array of characters
+.reverse() reverses the array and .join('') joins the reversed array back into a string.
+The console log will check if the original string and return true or false accordingly.
 */
 
 // You can run `node index.js` to view these console logs
